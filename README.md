@@ -15,18 +15,17 @@ Bigint longint in sas r and python
                                                                                                                       
        %let x=9223372036854775807;                                                                                    
                                                                                                                       
-       Three solutions (if hardware longint is there why not use it?)                                                 
+       Three solutions (if hardware datatype longint is available. Why not use it?)                                                 
                                                                                                                       
-           a. SAS macro (true C implemented lonint hardware processing?)                                              
+           a. SAS macro (true C implemented longint hardware processing?)                                              
                                                                                                                       
            b  SAS datastep  code (simulation of longint)                                                              
               http://tinyurl.com/y2wtmtdz                                                                             
                                                                                                                       
-           c. Python (has infinite integer support but not hardware implementation?)                                  
+           c. Python (has infinite integer support but not using the hardware implementation of 64bit longint?)                                  
               I am not sure Python has hardware support for 64bit integers,                                           
               may be slow because it simulates 64bit hardware.                                                        
-                                                                                                                      
-                                                                                                                      
+                                                                                                                                                                                                                                    
            d. R GMP (no native hardware support for 64bit integers, however there are several packages)               
               https://goo.gl/g7RQew                                                                                   
               also package bit64 (fast?)                                                                              
